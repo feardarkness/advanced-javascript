@@ -79,7 +79,7 @@ The event loop checks if the call stack is empty.
 
 ## Object oriented programming
 
-- Easy to add new functinoality
+- Easy to add new functionality
 - Performant (efficient in terms of memory)
 - Easy to understand
 
@@ -98,4 +98,19 @@ With **new**, this gets assigned an empty object, and **__proto__** has now the 
 this: {
 
 }
+```
+
+- Another way: whe can use **class**, but it's only syntactic sugar.
+```
+class Person{
+  constructor(a, b){
+
+  }
+
+  functionName(){
+
+  }
+}
+
+new Person('a', 'b');
 ```
