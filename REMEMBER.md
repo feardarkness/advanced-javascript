@@ -91,5 +91,11 @@ The event loop checks if the call stack is empty.
 
 Every javascript object can have only one __proto__.
 
-- Another way: **new**
+- Another way: **new**, new Person()
 If we create an object with new, then we share the functions on prototype.
+With **new**, this gets assigned an empty object, and **__proto__** has now the prototype of person.
+```
+this: {
+
+}
+```
