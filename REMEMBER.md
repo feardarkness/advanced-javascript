@@ -83,9 +83,13 @@ The event loop checks if the call stack is empty.
 - Performant (efficient in terms of memory)
 - Easy to understand
 
-This is always to the left of the dot.
-When Object.create(someProperties) is used to create an object, then __proto__ is set to someProperties.
+*this* is always to the left of the dot.
+
+- When Object.create(someProperties) is used to create an object, then __proto__ is set to someProperties.
 
 *__proto__* is different of *prototype*. If the property is not in the object itself, then javascript search in *__proto__*.
 
 Every javascript object can have only one __proto__.
+
+- Another way: **new**
+If we create an object with new, then we share the functions on prototype.
